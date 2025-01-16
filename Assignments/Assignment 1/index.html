@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="icon" href="images/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie and Show Reviews</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#movies-section">Movies</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#review">Write a review</a>
+            <a href="#review-table">View Reviews</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="intro">
+            <h2>Welcome to Movie Reviews</h2>
+            <p>Your go-to site for the latest reviews on movies and shows. Explore reviews, watch trailers, and share your thoughts!</p>
+        </section>
+
+        <section id="movies-section">
+            <h2>Top Movies</h2>
+ 
+            <article>
+                <figure>
+                    <img src="images/movie1.jpg" alt="Movie 1 Poster">
+                    <figcaption>Goodfellas: Crime/Thriller</figcaption>
+                </figure>
+                <details>
+                <summary>The story of Henry Hill and his life in the mafia, covering his relationship with his wife Karen and his mob partners Jimmy Conway and Tommy DeVito.
+                     The lowly, blue-collar side of New York's Italian mafia is explored in this crime biopic of wiseguy Henry Hill. </p>
+                     </summary>
+                     <p>Iconic dialog from the movie!
+                </details>
+                <audio controls>
+                    <source src="audio/audio1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+            
+            <!-- Movie 2 -->
+            <article>
+                <figure>
+                    <img src="images/movie2.jpg" alt="Movie 2 Poster">
+                    <figcaption>Movie 2: 50/50</figcaption>
+                </figure>
+                <details>
+                <summary>Adam is a 27-year-old radio journalist whose life turns upside down when he is diagnosed with spinal cancer. 
+                    Whilst battling the rare disease, he learns the value of friendship and love.
+                </summary>
+                <p></p>
+                </details>
+                <figure>
+                    <img src="images/movie2poster.jpg" alt="Movie 2 Poster 2">
+                    <figcaption>Alternative Poster</figcaption>
+                </figure>
+            </article>
+
+            <!-- Movie 3 -->
+            <article>
+                <figure>
+                    <img src="images/movie3.jpg" alt="Movie 3 Poster">
+                    <figcaption>Movie 3: Inception</figcaption>
+                </figure>
+                <details>
+                <summary>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., 
+                    but his tragic past may doom the project and his team to disaster. </summary>
+                    <p>The movie ends on a cliffhanger, what does this mean though?</p>
+                </details>
+                <video controls width="300">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Latest News</h2>
+            <p>Check out the upcoming blockbusters of 2025!</p>
+            <ul>
+                <li>
+                    <strong>Superman:</strong> Watch the trailer <a href="https://www.youtube.com/watch?v=uhUht6vAsMY">here</a>
+                </li>
+                <li>
+                    <strong>Jurassic World: Rebirth:</strong> Watch the trailer <a href="https://www.youtube.com/watch?v=fT0PIiYQpoo">here</a>
+                </li>
+                <li>
+                    <strong>Captain America: Brave New World:</strong> Watch the trailer <a href="https://www.youtube.com/watch?v=1pHDWnXmK7Y">here</a>
+                </li>
+            </ul>
+        
+            <h3>Top Movie Blogs</h3>
+            <ul>
+                <li><a href="https://www.imdb.com/news/movie/" target="_blank">IMDb Movie News</a></li>
+                <li><a href="https://www.rottentomatoes.com/news/" target="_blank">Rotten Tomatoes News</a></li>
+                <li><a href="https://www.hollywoodreporter.com/" target="_blank">Hollywood Reporter</a></li>
+            </ul>
+        
+            <h3>Did You Know?</h3>
+            <p>In 2024, the highest-grossing movie was <em>Avatar: The Way of Water</em>, making over $2 billion worldwide!</p>
+            <p>The Marvel Cinematic Universe has grossed over $30 billion across all its movies!</p>
+        
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Oscars 2025:</strong> March 9th, 2025</li>
+                <li><strong>Comic-Con 2025:</strong> July 18th - 21st, 2025</li>
+                <li><strong>Movie Premiere:</strong> "Avatar: Reborn" - December 15th, 2025</li>
+            </ul>
+        </aside>
+        
+        <!-- Reviews Table -->
+        <section id="review-table">
+            <h2>Reviews Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Movie</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Goodfellas</td>
+                        <td>Crime/Thriller</td>
+                        <td>4.5/5</td>
+                    </tr>
+                    <tr>
+                        <td>50/50</td>
+                        <td>Comedy/Drama</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Inception</td>
+                        <td>Sci-Fi/Adventure</td>
+                        <td>5/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Forms for Review Section -->
+    <section id="review">
+        <h2>Reviews</h2>
+        <form action="mailto:info@moviereviews.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="favorite-movie">Favorite Movie:</label>
+            <input list="movies" id="favorite-movie" name="favorite-movie" required>
+            <datalist id="movies">
+                <option value="Inception"></option>
+                <option value="The Shawshank Redemption"></option>
+                <option value="Interstellar"></option>
+                <option value="The Dark Knight"></option>
+                <option value="Forrest Gump"></option>
+            </datalist>
+    
+            <label for="message">Reviews:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: <a href="mailto:info@moviereviews.com">info@moviereviews.com</a> | <a href="tel:+1234567890">+1 234 567 890</a></p>
+    </footer>
+</body>
+</html>
