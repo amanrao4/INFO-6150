@@ -1,0 +1,350 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #283593; /* Text color */
+  background-color: #EEEEEE; /* Subtle background for contrast */
+  padding: 10px; /* Adds spacing around the text */
+  border-left: 4px solid #FFC107; /* Left border for emphasis */
+  line-height: 1.8; /* Improves readability */
+  font-size: 1rem; /* Standard font size */
+  border-radius: 5px; /* Slightly rounded corners for a softer look */
+  margin: 10px 0; /* Spacing between paragraphs */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #EEEEEE; /* Background for the body */
+}
+
+/* Header Styles */
+header {
+  background: #283593;
+  color: #FFC107;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #FFC107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #283593;
+  font-weight: bold;
+}
+
+/* General Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: #EEEEEE;
+  color: #283593;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header Row */
+thead th {
+  background: #FFC107;
+  color: #283593;
+  font-weight: bold;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+/* Data Rows */
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+tbody tr:hover {
+  background-color: #DADADA;
+}
+
+/* Data Cells */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+/* Links in Table */
+td a {
+  color: #283593;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #FFC107;
+  text-decoration: underline;
+}
+
+/* Footer Row (if applicable) */
+tfoot td {
+  background: #FFC107;
+  color: #283593;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #EEEEEE;
+}
+
+/* Gallery Section Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Individual Project Container */
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+/* Images */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Overlay (Hidden by Default) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 53, 147, 0.8); /* Semi-transparent background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover Effect for Images */
+.project:hover img {
+  transform: scale(0.9); /* Shrinks image slightly */
+  opacity: 0.7;
+}
+
+/* Hover Effect to Show Overlay */
+.project:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Container Styles */
+.container {
+  border: 2px solid #283593;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.container:hover {
+  transform: scale(1.05); /* Slightly enlarge the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  border-color: #FFC107; /* Change border color on hover */
+}
+
+/* Image Styles */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%; /* Circular images */
+  width: 90px;
+  height: 90px;
+  object-fit: cover; /* Ensures image stays within bounds */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.container img:hover {
+  transform: scale(1.1); /* Slight zoom effect on image hover */
+}
+
+/* Name and Role Styles */
+.container span {
+  font-size: 20px;
+  color: #283593;
+  font-weight: bold;
+  display: block;
+}
+
+/* Paragraph Text */
+.container p {
+  color: #333;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+  color: #283593;
+}
+
+form input, form textarea, form button {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #283593;
+  color: #FFC107;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #3F51B5;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background: #283593;
+  color: #FFC107;
+  padding: 1rem;
+}
+
+/* Aside Styles */
+aside {
+  background-color: #EEEEEE;
+  padding: 20px;
+  border-left: 3px solid #FFC107;
+  margin: 20px;
+  float: right;
+  width: 25%;
+}
+
+aside h3 {
+  color: #283593;
+  font-weight: bold;
+}
+
+aside ul {
+  list-style: square;
+  margin: 0;
+  padding: 0;
+}
+
+aside ul li {
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+      text-align: center;
+  }
+
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .gallery {
+      grid-template-columns: 1fr;
+  }
+
+  form {
+      padding: 1rem;
+  }
+}
