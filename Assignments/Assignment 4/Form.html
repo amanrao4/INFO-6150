@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" novalidate>
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="2" max legnth = "20"/>	
+			<br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" minlength="2" maxlength="20"/>
+			<br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" minlength="15" maxlength="40" />
+			<br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" minlength="14" maxlength="14"/>
+			<br><br>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" minlength="5" maxlength="5"/>
+			<br><br>
+			
+			<label for="address2">Address:</label>
+			<textarea name="text" id="address2" placeholder="John Doe Street, Apartment #2" rows="5" cols="25" minlength="20" maxlength="100"></textarea>
+			<p id="charCount">0/100 characters used</p>
+			<br><br>
+             
+            <label for="zipcode">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			<br><br>
+			<input type="Submit">
+			<input type="Reset">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+
+ <label for="sourceSelect">Select a Source:</label>
+<select id="sourceSelect">
+    <option value="">-- Select --</option>
+    <option value="Facebook">Facebook</option>
+    <option value="Google">Google</option>
+    <option value="Yelp">Yelp</option>
+    <option value="Twitter">Twitter</option>
+    <option value="LinkedIn">LinkedIn</option>
+</select>
+<div id="dynamicCheckbox"></div>
+<h3>Submitted Data:</h3>
+<table id="resultsTable" border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>ZIP Code</th>
+            <th>Comments</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+ <script src="script.js">
+ </script>
+
+ </body>
+</html>
