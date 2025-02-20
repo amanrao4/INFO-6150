@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="displayUsername"></span>!</h2>
+
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1">
+        <span class="error" id="num1Error"></span>
+
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2">
+        <span class="error" id="num2Error"></span>
+
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+
+        <label for="result">Result:</label>
+        <input type="text" id="result" readonly>
+    </div>
+</body>
+</html>
