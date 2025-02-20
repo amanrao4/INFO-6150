@@ -38,6 +38,7 @@ async function resetStopwatch() {
     document.getElementById("datePicker").value = "";
 }
 
-document.getElementById("datePicker").addEventListener("change", function() {
-    this.setAttribute("disabled", "true");
+document.getElementById("datePicker").addEventListener("keydown", function(event) {
+    event.preventDefault();
 });
+
