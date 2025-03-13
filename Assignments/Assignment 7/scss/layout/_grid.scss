@@ -1,0 +1,75 @@
+// _grid.scss
+
+.home-page .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: $spacing;
+    
+    .destination-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-family: $heading-font;
+            text-align: center;
+            color: $text-color;
+        }
+    }
+}
+
+.destination-page {
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); // Increased min-width for better layout
+        gap: 25px; // Slightly increased spacing for better readability
+        padding: $section-padding;
+        justify-content: center;
+        align-items: start;
+
+        .destination-card {
+            background: $white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            overflow: hidden; // Prevents overflow issues
+            
+            &:hover {
+                transform: translateY(-8px);
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                width: 100%;
+                height: 220px; // Prevents distortion
+                object-fit: cover; // Ensures images fit nicely
+                border-radius: 10px;
+            }
+
+            h3 {
+                margin-top: 12px;
+                font-family: $heading-font;
+                text-align: center;
+                color: $text-color;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

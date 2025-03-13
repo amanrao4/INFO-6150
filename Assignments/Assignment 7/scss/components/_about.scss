@@ -1,0 +1,17 @@
+.about {
+    padding: $section-padding;
+    background: $background-color;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 10px auto;
+        color: $text-color;
+    }
+}

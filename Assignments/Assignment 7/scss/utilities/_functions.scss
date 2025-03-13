@@ -1,0 +1,9 @@
+// _functions.scss
+
+@function lighten-color($color, $amount) {
+    @return lighten($color, $amount);
+}
+
+@function darken-color($color, $amount) {
+    @return darken($color, $amount);
+}

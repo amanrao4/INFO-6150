@@ -1,0 +1,40 @@
+.travel-tips {
+    background: $white;
+    padding: $section-padding;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .tips-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .tip-card {
+            background: $background-color;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 50px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                color: $text-color;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.testimonials {
+    padding: $section-padding;
+    background: $background-color;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card {
+        background: $white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        p {
+            font-style: italic;
+        }
+
+        h4 {
+            margin-top: 10px;
+            color: $text-color;
+        }
+    }
+}

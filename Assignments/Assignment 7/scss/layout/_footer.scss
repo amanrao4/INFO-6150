@@ -1,0 +1,30 @@
+// _footer.scss
+
+footer {
+    background: darken($primary-color, 10%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.9;
+    font-family: $body-font;
+    position: relative;
+    overflow: hidden;
+
+    .social-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        a {
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+                color: $secondary-color;
+            }
+        }
+    }
+}

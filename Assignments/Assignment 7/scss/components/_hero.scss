@@ -1,0 +1,40 @@
+.home-page {
+    .hero {
+        background: url('/images/prague.png') center/cover no-repeat;
+        text-align: center;
+        color: $white;
+        padding: 100px 20px;
+    }
+}
+
+.destination-page {
+    .hero {
+        background: url('/images/milan.png') center/cover no-repeat;
+        padding: 80px 20px;
+    }
+}
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        background: $primary-color;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background: darken($primary-color, 10%);
+    }
+

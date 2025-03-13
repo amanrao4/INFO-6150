@@ -1,0 +1,44 @@
+// _header.scss
+
+header {
+    background: rgba($primary-color, 0.9);
+    backdrop-filter: blur(10px);
+    padding: $spacing;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-family: $heading-font;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    padding: 8px 16px;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

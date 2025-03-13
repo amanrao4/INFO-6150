@@ -1,0 +1,64 @@
+@import 'utilities/variables.scss';
+@import 'utilities/functions.scss';
+@import 'utilities/mixins.scss';
+@import 'utilities/globals.scss';
+
+
+
+@import 'layout/footer.scss';
+@import 'layout/header.scss';
+@import 'layout/grid.scss';
+
+@import 'components/buttons.scss';
+@import 'components/cards.scss';
+@import 'components/hero.scss';
+@import 'components/about.scss';
+@import 'components/destinations.scss';
+@import 'components/travel-tips.scss';
+@import 'components/testimonials.scss';
+@import 'components/newsletter.scss';
+@import 'components/slider.scss';
+
+
+
+/* Variables */
+$primary-color: #4CAF50;
+$text-color: #333;
+$font-stack: 'Arial, sans-serif';
+
+/* Mixins */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    @include flex-center;
+    flex-direction: column;
+    background: url('../images/hero.jpg') no-repeat center;
+    background-size: cover;
+    height: 300px;
+    color: white;
+}
+
+/* Grid */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Flexbox */
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.destination-card {
+    @include flex-center;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
