@@ -7,18 +7,62 @@ import About from "../pages/About";
 import Jobs from "../pages/Jobs";
 import Contact from "../pages/Contact";
 import CompanyShowcase from "../pages/CompanyShowcase";
+import PrivateRoute from "./PrivateRoute";
 
 const AppRoutes = () => {
   const { token } = useContext(AuthContext);
 
   return (
     <Routes>
-      <Route path="/" element={token ? <Navigate to="/home" /> : <Login />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/jobs" element={<Jobs />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/companies" element={<CompanyShowcase />} />
+      {/* Login Page */}
+      <Route
+        path="/"
+        element={!token ? <Login /> : <Navigate to="/home" />}
+      />
+
+      {/* Protected Pages */}
+      <Route
+        path="/home"
+        element={
+          <PrivateRoute>
+            <Home />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <PrivateRoute>
+            <About />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/jobs"
+        element={
+          <PrivateRoute>
+            <Jobs />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <PrivateRoute>
+            <Contact />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/companies"
+        element={
+          <PrivateRoute>
+            <CompanyShowcase />
+          </PrivateRoute>
+        }
+      />
+
+      {/* Catch-All: Redirect unknown routes */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
