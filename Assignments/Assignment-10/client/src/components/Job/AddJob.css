@@ -1,0 +1,54 @@
+.add-job-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 15px 35px 35px 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    background-color: #222; /* Dark charcoal background */
+    color: white; /* White text */
+}
+
+.add-job-container button {
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.add-job-container input,
+.add-job-container textarea,
+.add-job-container .MuiInputLabel-root {
+    color: white !important; /* Ensure the input text and label are white */
+}
+
+.add-job-container input,
+.add-job-container textarea {
+    background-color: #444; /* Lighter background for textboxes */
+    color: black; /* Black text for readability */
+}
+
+.add-job-container .MuiFormControl-root {
+    margin-bottom: 15px;
+}
+
+.add-job-container .MuiButton-root {
+    background-color: #800000; /* Maroon button background */
+    color: white;
+}
+
+.add-job-container .MuiButton-root:hover {
+    background-color: #b30000; /* Red hover effect */
+}
+
+.feedbackSuccess {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
+.feedbackErr {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f11b08;
+    text-align: center;
+}

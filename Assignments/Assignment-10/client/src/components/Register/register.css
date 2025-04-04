@@ -1,0 +1,42 @@
+.register-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 15px 35px 35px 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    background-color: #222;
+    color: white;
+}
+
+.register-container button {
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.register-container input, .register-container .MuiInputLabel-root {
+    color: white !important;
+}
+
+.register-container input {
+    background-color: #444;
+    color: black;
+}
+
+.register-container .MuiFormControl-root {
+    margin-bottom: 15px;
+}
+
+.register-container .MuiButton-root {
+    background-color: #800000;
+    color: white;
+}
+
+.register-container .MuiButton-root:hover {
+    background-color: #b30000;
+}
+
+.register-container .MuiTypography-root {
+    text-align: center;
+}

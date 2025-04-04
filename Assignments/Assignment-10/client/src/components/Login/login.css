@@ -1,0 +1,38 @@
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 15px 35px 35px 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    background-color: #222; /* Dark charcoal background */
+    color: white; /* White text */
+}
+
+.login-container button {
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.login-container input, .login-container .MuiInputLabel-root {
+    color: white !important; /* Ensure the input text and label are white */
+}
+
+.login-container input {
+    background-color: #444; /* Lighter background for textboxes */
+    color: black; /* Black text for readability */
+}
+
+.login-container .MuiFormControl-root {
+    margin-bottom: 15px;
+}
+
+.login-container .MuiButton-root {
+    background-color: #800000; /* Maroon button background */
+    color: white;
+}
+
+.login-container .MuiButton-root:hover {
+    background-color: #b30000; /* Red hover effect */
+}

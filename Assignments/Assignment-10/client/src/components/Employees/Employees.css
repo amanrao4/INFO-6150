@@ -1,0 +1,80 @@
+/* Container Styling */
+.admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.4); /* Red shadow for theme consistency */
+    color: white; /* White text for readability */
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: red; /* Red color for theme */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Loading Message */
+.loading-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* No Users Found Message */
+.no-users-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Table Styling */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #333; /* Dark table background */
+    color: white; /* White text */
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px;
+    border: 1px solid white; /* Red border for theme consistency */
+    text-align: left;
+}
+
+.users-table th {
+    background-color: #800000; /* Maroon background for header */
+    color: white;
+    font-weight: bold;
+}
+
+.users-table tr:hover {
+    background-color: #444; /* Slightly lighter row background on hover */
+}
+
+/* Responsive Table for Small Screens */
+@media (max-width: 768px) {
+    .users-table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
